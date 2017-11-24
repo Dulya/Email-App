@@ -1,0 +1,14 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "shows how to send a email using express server",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dulya",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
