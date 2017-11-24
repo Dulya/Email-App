@@ -47,6 +47,7 @@ app.post('/api/sendemail', function (req, res) {
     });
 });
 
-app.listen(3000);
+app.listen(3000,()=>{
+    console.log("server is listening");
+});
 
-console.log("server is listening");
