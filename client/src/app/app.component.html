@@ -1,0 +1,23 @@
+<div class="email-panel">
+  <div>
+    <font class="input-title">Email Address</font>
+    <input class="email-input" type="text" #email type="email" placeholder="Enter Email" name="email"  (keyup.enter)="send(email.value)"/>  
+  </div>
+
+  <div>
+    <font class="input-title">Subject</font>
+    <input class="email-input" type="text" id="emailSubject" type="text" placeholder="Enter Email Subject" name="emailSubject" />
+  </div>
+
+  <div>
+    <font class="input-title">Content</font>
+    <input class="email-input" type="text" id="emailContent" type="text" placeholder="Enter Email Content" name="emailContent"  />
+  </div>
+
+  <div>
+    <button type="button" class="email-send-button" (click)="send(email.value)">
+      Send
+    </button>
+
+  </div>
+</div>

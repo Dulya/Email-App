@@ -22,14 +22,15 @@ var smtpTransport = nodemailer.createTransport({
     host: "smtp.gmail.com",
     auth: {
         user: "dulyamurage@gmail.com",
-        pass: "dcm@1993"
+        pass: "emailapp"
     }
 });
 
 //code for send email
 app.post('/api/sendemail', function (req, res) { 
+   
     var mailOptions = {
-        from: "storyboard.ifs@gmail.com",
+        from: "dulyamurage@gmail.com",
         to: req.body.to,
         subject: req.body.subject,
         html: req.body.text,
